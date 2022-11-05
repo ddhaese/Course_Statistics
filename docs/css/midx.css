@@ -4,13 +4,8 @@
   --backlight: #EFEFEF;
 }
 
-@font-face {
-    font-family: "din-next";
-    src: url("../fnt/DINNextLTPro-Regular.otf");
-}
-
 body, html{
-  height: calc(100% - 71px);
+  height: calc(100% - 55px);
   background-color: var(--backlight);
 }
 
@@ -18,8 +13,19 @@ section, .page-wrapper, .book-body {
   background-color: var(--backlight) !important;
 }
 
+.book-summary{
+  background-color: #dfdfdf !important;
+}
+
+.book-search {
+  display: none !important;
+}
+
+.with-search .book-search {
+  display: block !important;
+}
+
 body {
-  font-family: "din-next", "Roboto", sans-serif;
   color: var(--lowlight);
 }
 
@@ -131,4 +137,3 @@ div#TOC > ul > li > a {
 .footnotes {
   font-size: .8em;
 }
-
